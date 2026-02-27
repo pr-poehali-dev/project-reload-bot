@@ -27,12 +27,20 @@ export default function HeroContent() {
 
         {/* Buttons */}
         <div className="flex items-center gap-4 flex-wrap">
-          <button className="px-8 py-3 rounded-full bg-transparent border border-white/30 text-white font-normal text-xs transition-all duration-200 hover:bg-white/10 hover:border-white/50 cursor-pointer">
+          <button
+            onClick={() => document.getElementById('privileges')?.scrollIntoView({ behavior: 'smooth' })}
+            className="px-8 py-3 rounded-full bg-transparent border border-green-400/40 text-white font-normal text-xs transition-all duration-200 hover:bg-green-400/10 hover:border-green-400/60 cursor-pointer"
+          >
             Привилегии
           </button>
-          <button className="px-8 py-3 rounded-full bg-white text-black font-normal text-xs transition-all duration-200 hover:bg-white/90 cursor-pointer">
+          <a
+            href="https://t.me/DIMAS_3108"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-3 rounded-full bg-green-500 text-black font-semibold text-xs transition-all duration-200 hover:bg-green-400 cursor-pointer"
+          >
             Купить
-          </button>
+          </a>
         </div>
       </div>
     </main>

@@ -7,7 +7,7 @@ export default function PulsingCircle() {
       <div className="relative w-20 h-20 flex items-center justify-center">
         {/* Pulsing Border Circle */}
         <PulsingBorder
-          colors={["#BEECFF", "#E77EDC", "#FF4C3E", "#00FF88", "#FFD700"]}
+          colors={["#4ade80", "#22c55e", "#16a34a", "#86efac", "#00FF88"]}
           colorBack="#00000000"
           speed={1.5}
           roundness={1}
